@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="rw">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kwiyandikisha - MechaLink</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script> <!-- Link to the JavaScript file -->
+</head>
+<body>
+    <header class="bg-primary text-white text-center p-3">
+        <img src="MECHALINK LOGO.png" alt="MechaLink Logo" class="logo mb-2" width="10%">
+        <nav>
+            <ul class="nav justify-content-center">
+                <li class="nav-item"><a class="nav-link text-white" href="index.html">Ahabanza</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="services.html">Serivisi</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="contact.html">Twandikire</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="login.html">Injira</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="registration.html">Kwiyandikisha</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container my-5">
+        <section class="registration">
+            <h1 class="text-center">Kwiyandikisha</h1>
+            <form id="registrationForm" class="needs-validation" novalidate>
+                <div class="form-group">
+                    <label for="username">Izina ry' umukoresha:</label>
+                    <input type="text" class="form-control" id="username" name="username" required>
+                    <div class="invalid-feedback">Nyamuneka andika izina ry' umukoresha.</div>
+                </div>
+                <div class="form-group">
+                    <label for="email">Imeyili:</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                    <div class="invalid-feedback">Nyamuneka andika imeyili y'ukuri.</div>
+                </div>
+                <div class="form-group">
+                    <label for="password">Ijambo ry' ibanga:</label>
+                    <input type="password" class="form-control" id="password" name="password" required>
+                    <div class="invalid-feedback">Nyamuneka andika ijambo ry' ibanga.</div>
+                </div>
+                <div class="form-group">
+                    <label for="confirmPassword">Kongera Ijambo ry' ibanga:</label>
+                    <input type="password" class="form-control" id="confirmPassword" name="confirmPassword" required>
+                    <div class="invalid-feedback">Ijambo ry' ibanga riratandukanye.</div>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Iyandikishe</button>
+            </form>
+            <p id="registrationMessage" class="text-center mt-3"></p>
+        </section>
+
+        <section class="search my-5">
+            <h2 class="text-center">Shaka Abatekinisiye cyangwa Koza Imodoka</h2>
+            <form id="searchForm" class="form-inline justify-content-center">
+                <div class="form-group mb-2">
+                    <label for="searchLocation" class="sr-only">Aho ushaka serivisi:</label>
+                    <input type="text" class="form-control" id="searchLocation" name="searchLocation" placeholder="Andika ahantu...">
+                </div>
+                <button type="submit" class="btn btn-primary mb-2">Shaka</button>
+            </form>
+            <div id="searchResults" class="text-center mt-3"></div>
+        </section>
+    </main>
+
+    <footer class="bg-primary text-white text-center p-3">
+        <p>&copy; 2024 MechaLink. Uburenganzira bwose burabitswe.</p>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="rw">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MechaLink - Ahabanza</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body{background-attachment:url( mecha4);}
+    container my-5{
+        height: 10mm;
+    }
+
+        .row{  padding: 10px 20px 20px;
+        align-items: center
+    }
+    
+body{background-color:;}
+.col-md-4{
+    background-color: whitesmoke;
+    border: 1mm solid black;
+}
+        #map {
+            height: 400px;
+            width: 100%;
+        }
+        .hero-section {
+            background-color:white
+            background: url('YOUR-BACKGROUND-IMAGE.jpg') no-repeat center center/cover;
+            color:;
+            height: 30vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            border: 2mm solid blue;
+        }
+        .search-bar { 
+            color: aliceblue;
+            background-color: black;
+            margin: 30px auto;
+            max-width: 600px;
+        }
+        .service-box {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 20px;
+            margin-bottom: 20px;
+            margin-top: auto ;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <header class="bg-primary text-white text-center p-3"> 
+        <img src="MECHALINK LOGO.png" alt="MechaLink Logo" class="logo mb-2" width="10%">
+        <nav>
+            <ul class="nav justify-content-center">
+                <li class="nav-item"><a class="nav-link text-white" href="index.html">Ahabanza</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="services.html">Serivisi</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="contact.html">Twandikire</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="login.html">Injira</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="a"> <img src="mech1.webp" alt="mech1 big image" width="100%"></div>
+
+    <div class="hero-section">
+      
+        <h1>Murakaza Neza kuri MechaLink</h1>
+        <p>Umufasha wawe wizewe mu Koza Imodoka no Gukora</p>
+        <a href="services.html" class="btn btn-light btn-lg">Reba Serivisi zacu</a>
+    </div>
+
+    <!-- Search Section -->
+    <section class="search-bar text-center my-5">
+        <h2>Shakisha Serivisi hafi yawe</h2>
+        
+        <form class="form-inline justify-content-center">
+            <input class="form-control mr-sm-2" type="search" placeholder="Shakisha Umukanishi cyangwa Serivisi" aria-label="Search">
+            <button class="btn btn-primary my-2 my-sm-0" type="submit">Shaka</button>
+        </form>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="container my-5">
+        <h2 class="text-center mb-4">Serivisi zacu</h2>
+        <div class="row">
+            
+            <div class="col-md-4">
+                <div class="service-box">
+                    <h3>Koza Imodoka</h3>
+                    <p>Serivisi nziza yo koza imodoka ku gipimo cyawe.</p>
+                </div>
+            <div>
+                <img src="mech2.webp" alt="mech2"width="100%">
+            </div>
+            </div>
+            <div class="col-md-4">
+                <div class="service-box">
+                    <h3>Gukora Imodoka</h3>
+                    <p>Abatekinisiye b'inararibonye bari hafi yawe.</p>
+                    <div class="a"> </div>
+                   
+                </div>
+            <div>
+                <img src="mecha6.webp" alt="mech2"width="100%">
+            </div>
+            </div>
+            <div class="col-md-4">
+                <div class="service-box">
+                    <h3>Ububiko bw'ibikoresho</h3>
+                    <p>Ibikoresho byose by'imodoka bikenewe birahari.</p>
+                    <div class="a"> </div>
+                   </div>
+                   <div>
+                <img src="mecha5.webp" alt="mech2" width="90%">
+                  </div>
+            </div>
+        </div>
+    </section>
+
+   
+   <!-- Google Map Section 
+<section id="location" class="container my-5">
+        <h2 class="text-center mb-4">Aho uherereye</h2>
+        <div id="map"></div>
+    </section>
+-->
+    <footer class="bg-primary text-white text-center p-3 mt-5">
+        <p>&copy; 2024 MechaLink. Uburenganzira bwose burabitswe.</p>
+    </footer> -->
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+       /* function initMap() {
+            var options = {
+                zoom: 10,
+                center: {lat: -1.9706, lng: 30.1044} // Example for Kigali
+            };
+            var map = new google.maps.Map(document.getElementById('map'), options);
+
+            // Marker
+            var marker = new google.maps.Marker({
+                position: {lat: -1.9706, lng: 30.1044},
+                map: map,
+                title: "MechaLink Location"
+            });
+        }
+    </script>
+</body>
+</html>
